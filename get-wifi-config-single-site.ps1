@@ -5,8 +5,8 @@
 
 # Variables
     $APIKey  = "#KEY HERE"
-    $orgID   = "382706"
-    $networkID = "L_707628091450592917"
+    $orgID   = ""
+    $networkID = ""
     $ssids = 0
 
 

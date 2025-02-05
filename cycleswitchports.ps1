@@ -3,7 +3,7 @@
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("X-Cisco-Meraki-API-Key", "#KEY HERE")
 
-    $response = Invoke-RestMethod 'https://api.meraki.com/api/v1/devices/Q2KW-QAUA-AJ4P/switch/ports' -Method 'GET' -Headers $headers 
+    $response = Invoke-RestMethod 'https://api.meraki.com/api/v1/devices/$($serial)/switch/ports' -Method 'GET' -Headers $headers 
     $portdata = $response
 
     $response = 0
@@ -13,7 +13,7 @@
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
 $headers.Add("X-Cisco-Meraki-API-Key", "#KEY HERE")
 
-$response = Invoke-RestMethod 'https://api.meraki.com/api/v1/devices/Q2UX-5TFK-3UWK/clients' -Method 'GET' -Headers $headers
+$response = Invoke-RestMethod 'https://api.meraki.com/api/v1/devices/Q2$($serial)/clients' -Method 'GET' -Headers $headers
 
 $clientdata = $response
 
@@ -26,7 +26,7 @@ $response = 0
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
 $headers.Add("X-Cisco-Meraki-API-Key", "#KEY HERE")
 
-$response = Invoke-RestMethod 'https://api.meraki.com/api/v1/devices/Q2KW-QAUA-AJ4P/switch/ports' -Method 'GET' -Headers $headers
+$response = Invoke-RestMethod 'https://api.meraki.com/api/v1/devices/$($serial)/switch/ports' -Method 'GET' -Headers $headers
 $response | Format-Table portid,vlan,poeenabled,enabled,name
 
 

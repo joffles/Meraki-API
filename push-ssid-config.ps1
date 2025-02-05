@@ -8,8 +8,8 @@
 # Variables
 
     $APIKey  = "#KEY HERE"
-    $orgID   = "382706"
-    $networkID = "L_707628091450591681"
+    $orgID   = ""
+    $networkID = ""
     $header = "X-Cisco-Meraki-API-Key: $($APIkey)"
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("X-Cisco-Meraki-API-Key", "#KEY HERE")

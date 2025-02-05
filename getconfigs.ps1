@@ -5,7 +5,7 @@
 
 # Variables
     $APIKey  = "#KEY HERE"
-    $orgID   = "382706"
+    $orgID   = ""
 # Functions
 
     Function merakiAPIcall {

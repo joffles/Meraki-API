@@ -1,6 +1,6 @@
 $APIKey = "#KEY HERE"
-$orgID = "382706"
-$network = "L_707628091450591654"
+$orgID = ""
+$network = ""
 $headers = @{
     "X-Cisco-Meraki-API-Key" = $APIKey
 }
